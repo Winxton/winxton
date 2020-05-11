@@ -13,9 +13,9 @@ const About = () => {
             <section className="section">
                 <div className="container">
                 <h2 className="title is-4">About me</h2>
-                <p>I am a Software Developer in Toronto and I like easy to use, minimal products.
+                <p>I am a Software Developer in Toronto and I like easy to use, minimal, and cute products.
                     Here I’ll jot down some snippets and shower thoughts.
-                    Previously I’ve worked with full stack web development, data pipeline at Twitter, and Android at Snapchat
+                    I’ve previously worked with full stack web development, data pipeline at Twitter, and Android at Snapchat
                     and am currently on creating software tools for ecommerce at <a href="https://rvere.com">rvere</a> with <a href="http://alexanderlam.ca">Alex Lam</a>.
                 </p>
                 </div>
@@ -97,7 +97,7 @@ const About = () => {
                             <div className="content">
                             <p>Mint is a popular app that tracks how you spend your money by connecting to your credit cards and bank accounts,
                             and summarizes spending over time </p>
-                            <p>As time is a much more valuable than money, I'm working on an app called timecouncil to viewing transactions, goals, and budgeting of time.</p>
+                            <p>As time is a much more valuable than money, I'm working on an app called Timecouncil, used to view transactions, goals, and budget times spent.</p>
                             </div>
                         </div>
                     </div>

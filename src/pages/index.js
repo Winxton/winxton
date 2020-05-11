@@ -44,8 +44,8 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <h1 className="title">Posts</h1>
       <ul>
+        <h1 className="title">Posts</h1>
         {edgesChunked.map((nodes, idx) => {
           return (
             <div key={idx} className="columns">
