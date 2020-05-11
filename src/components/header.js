@@ -4,30 +4,22 @@ import React from 'react'
 
 const Header = ({ siteTitle }) => (
   <div
+    className="columns is-centered"
     style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
+      marginBottom: '0rem',
     }}
   >
     <div
+      className="column has-text-centered"
       style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        padding: '1.5rem',
+        margin: 'auto'
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <Link to={'/'}><button className="button is-light" style={{marginRight: '0.5rem'}}>Home</button></Link>
+      <Link to={'/about'}><button className="button is-light">About</button></Link>
     </div>
+    <hr style={{marginTop: 0}}/>
   </div>
 )
 
