@@ -16,12 +16,12 @@ const About = () => {
                 <p>I am a Software Developer in Toronto and I like easy to use, minimal products.
                     Here I’ll jot down some snippets and shower thoughts.
                     Previously I’ve worked with full stack web development, data pipeline at Twitter, and Android at Snapchat
-                    and am currently on creating software tools for ecommerce at rvere.
+                    and am currently on creating software tools for ecommerce at <a href="https://rvere.com">rvere</a> with <a href="http://alexanderlam.ca">Alex Lam</a>.
                 </p>
                 </div>
             </section>
 
-            <h2 className="title is-4">Projects</h2>
+            <h2 className="title is-4" style={{paddingTop: '1em'}}>Projects</h2>
             
             <div className="columns">
                 <div className="column">
@@ -29,9 +29,7 @@ const About = () => {
                         <header className="card-header">
                             <div className="card-header-title">
                                 <img src={hyperspeedLogo} alt="hyperspeed logo" width="30em"/>
-                                <a style={{paddingLeft: '0.5rem'}}
-                                    target="_blank"
-                                    href="https://apps.shopify.com/hyperspeed">
+                                <a style={{paddingLeft: '0.5rem'}} href="https://apps.shopify.com/hyperspeed">
                                     Hyperspeed
                                 </a>
                             </div>
@@ -51,7 +49,7 @@ const About = () => {
                         <header className="card-header">
                             <div className="card-header-title">
                                 <img src={civilpixelsLogo} alt="civilpixels logo" width="30em"/>
-                                <a style={{paddingLeft: '0.5rem'}} target="_blank" href="https://apps.shopify.com/civil-pixels">CivilPixels</a>
+                                <a style={{paddingLeft: '0.5rem'}} href="https://apps.shopify.com/civil-pixels">CivilPixels</a>
                             </div>
                         </header>
 
@@ -71,14 +69,14 @@ const About = () => {
                         <header className="card-header">
                             <div className="card-header-title">
                                 <img src={pianoshelfLogo} alt="pianoshelf logo" width="30em"/>
-                                <a style={{paddingLeft: '0.5rem'}} target="_blank" href="http://www.pianoshelf.com">Pianoshelf</a>
+                                <a style={{paddingLeft: '0.5rem'}} href="http://www.pianoshelf.com">Pianoshelf</a>
                             </div>
                         </header>
 
                         <div className="card-content">
                             <div className="content">
                                 <p>Pianoshelf is platform for sharing sheet music. It was first written as I was learning programming and piano in middle school, and rewritten
-                                with my UWaterloo classmates and friends <a target="_blank" href="https://ankitsardesai.ca">Ankit Sardesai</a>, <a target="_blank" href="https://ryanly.ca">Ryan Ly</a>, <a target="_blank" href="https://shamak.github.io/">Shamak Dutta</a>&nbsp;
+                                with my UWaterloo classmates and friends <a href="https://ankitsardesai.ca">Ankit Sardesai</a>, <a href="https://ryanly.ca">Ryan Ly</a>, <a href="https://shamak.github.io/">Shamak Dutta</a>&nbsp;
                                 with the more modern redux / reactjs / python.
                                 
                                 It currently has 80k monthly active users.</p>

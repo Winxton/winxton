@@ -29,6 +29,8 @@ function renderItem({ node: post }) {
         <Link to={post.fields.slug}>
           <h2>{post.frontmatter.title}</h2>
         </Link>
+        <span style={{paddingRight: '.5rem'}} className="subtitle is-6">{post.frontmatter.date}</span>
+        {post.frontmatter.tags.map((tag) => <span key={tag} className="tag is-light">{tag}</span>)}
         <p>{post.excerpt}</p>
       </li>
     </div>
@@ -38,10 +40,11 @@ function renderItem({ node: post }) {
 const BlogIndex = ({ data }) => {
   const { edges: posts } = data.allMdx
   
-  const edgesChunked = chunkArray(posts, 2)
+  const edgesChunked = chunkArray(posts, 1)
 
   return (
     <Layout>
+      <h1 className="title">Posts</h1>
       <ul>
         {edgesChunked.map((nodes, idx) => {
           return (
@@ -64,6 +67,8 @@ export const pageQuery = graphql`
           excerpt
           frontmatter {
             title
+            date(formatString: "MMMM DD, YYYY")
+            tags
           }
           fields {
             slug

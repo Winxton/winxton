@@ -30,6 +30,8 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
+        <footer style={{paddingBottom: '2em'}}>
+        </footer>
       </>
     )}
   />
