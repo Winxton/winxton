@@ -96,8 +96,8 @@ const About = () => {
                         <div className="card-content">
                             <div className="content">
                             <p>Mint is a popular app that tracks how you spend your money by connecting to your credit cards and bank accounts,
-                            and summarizes spending over time </p>
-                            <p>As time is a much more valuable than money, I'm working on an app called Timecouncil, used to view transactions, goals, and budget times spent.</p>
+                            and summarizes spending over time.</p>
+                            <p>I'm working on an app called Timecouncil, used to view transactions, goals, and budget our time.</p>
                             </div>
                         </div>
                     </div>
