@@ -16,7 +16,7 @@ const About = () => {
                 <p>I am a Software Developer in Toronto and I like easy to use, minimal, and cute products.
                     Here I’ll jot down some snippets and shower thoughts.
                     I’ve previously worked with full stack web development, data pipeline at Twitter, and Android at Snapchat
-                    and am currently on creating software tools for ecommerce at <a href="https://rvere.com">rvere</a> with <a href="http://alexanderlam.ca">Alex Lam</a>.
+                    and am currently on creating software tools for ecommerce at <a href="https://rvere.com">rvere</a> with <a href="http://alexanderlam.ca">Alex</a>.
                 </p>
                 </div>
             </section>

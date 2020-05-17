@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: 'Winxton',
-    description: "Winston Wu's blog.",
+    description: "Winston Wu (winxton)'s blog on indie-hacking, programming, design, psychology, and random thoughts.",
     siteUrl: `https://www.winxton.com`,
     author: '@winxton',
   },
@@ -112,7 +112,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Winxton's RSS Feed",
+            title: "Winxton (Levi Nakamura)",
           }
         ]
       }
