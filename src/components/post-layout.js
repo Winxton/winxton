@@ -12,7 +12,10 @@ export default function PageTemplate({ data: { mdx } }) {
     <Layout>
       <div className="content">
         <h1 className="title">{mdx.frontmatter.title}</h1>
-        <p className="subtitle is-6">{mdx.frontmatter.date}</p>
+        <p className="subtitle is-6">{mdx.frontmatter.date}
+          {mdx.frontmatter.tags.map((tag) =>
+            <span key={tag} style={{marginLeft: '0.5em'}} className="tag is-light">{tag}</span>)}
+        </p>
         <MDXProvider components={shortcodes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
@@ -28,6 +31,7 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        tags
         date(formatString: "MMMM DD, YYYY")
       }
     }
