@@ -3,11 +3,13 @@ import Layout from '../components/layout'
 import civilpixelsLogo from '../images/civilpixels.png'
 import hyperspeedLogo from '../images/hyperspeed.png'
 import pianoshelfLogo from '../images/pianoshelf.png'
+import SEO from '../components/seo'
 
 
 const About = () => {
     return (
         <Layout>
+            <SEO title="About"/>
             <h1 className={"title"}>Winxton</h1>
 
             <section className="section">
