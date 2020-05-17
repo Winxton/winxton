@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: 'Winxton',
-    description: "Winston Wu (winxton)'s blog on indie-hacking, programming, design, psychology, and random thoughts.",
+    description: "Winston Wu (winxton)'s blog on indie-hacking, programming, design, psychology, and random shower thoughts.",
     siteUrl: `https://www.winxton.com`,
     author: '@winxton',
   },

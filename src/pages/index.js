@@ -1,7 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from '../components/layout';
+import Layout from '../components/layout'
 import { chunkArray } from '../utils/utils'
+import SEO from '../components/seo'
 
 
 function renderItem({ node: post }) {
@@ -26,6 +27,7 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Winxton" titleTemplate="Winxton"/>
       <ul>
         <h1 className="title">Posts</h1>
         {edgesChunked.map((nodes, idx) => {
