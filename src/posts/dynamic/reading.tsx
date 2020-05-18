@@ -20,7 +20,6 @@ function Reading() {
     const [wordsPerMinute, setWordsPerMinute] = useState(200)
     const [minutesPerDay, setMinutesPerDay] = useState(30)
     const [curRange, setRange] = useState<Range>('MONTH')
-    const [changing, setChanging] = useState(false)
 
     const groups = [10000, 1000, 100, 10, 1]
     const totalWords = getTotalWords()
@@ -129,7 +128,7 @@ function Reading() {
             const multiplier = Math.pow(1.5, Math.log10(parseInt(group)))
             for (let i = 0; i < groupCount; i++) {
                 unitsToRender.push(
-                    <div className="has-text-centered has-text-grey" style={{display: "inline-block"}}>
+                    <div className="has-text-centered has-text-grey is-inline-block">
                         <img key={`${group}-${i}`} style={{display: "block"}}
                              src={image} width={multiplier * size}></img>
                         <span>{group}</span>
@@ -150,6 +149,26 @@ function Reading() {
         return (
             <>
                 <h3>Or in pictures..</h3>
+
+                <div style={{paddingBottom: '0.5em'}}>
+                    <div className="has-text-grey is-inline-block">
+                        <img style={{display: "block", marginLeft:'auto', marginRight:'auto'}} src={twitterImg} width={30}></img>
+                        <span>tweets</span>
+                    </div>
+                    <div className="has-text-grey is-inline-block" style={{paddingLeft: '0.8em'}}>
+                        <img style={{display: "block", marginLeft:'auto', marginRight:'auto'}} src={blogImg} width={30}></img>
+                        <span>blogs</span>
+                    </div>
+                    <div className="has-text-grey is-inline-block" style={{paddingLeft: '0.8em'}}>
+                        <img style={{display: "block", marginLeft:'auto', marginRight:'auto'}} src={longBlogImg} width={30}></img>
+                        <span>long blogs</span>
+                    </div>
+                    <div className="has-text-grey is-inline-block" style={{paddingLeft: '0.8em'}}>
+                        <img style={{display: "block", marginLeft:'auto', marginRight:'auto'}} src={bookImg} width={30}></img>
+                        <span>books</span>
+                    </div>
+                </div>
+
                 {twitterUnits}{blogUnits}{longBlogUnits}{bookUnits}
             </>
         )

@@ -12,18 +12,6 @@ $beige-lighter: #eff0eb;
 
 // // Update Bulma's global variables
 $family-sans-serif: 'Nunito', sans-serif;
-// $grey-dark: $brown;
-// $grey-light: $beige-light;
-// $primary: $purple;
-// $link: $pink;
-// $widescreen-enabled: false;
-// $fullhd-enabled: false;
-
-// // Update some of Bulma's component variables
-// $body-background-color: $beige-lighter;
-// $control-border-width: 2px;
-// $input-border-color: transparent;
-// $input-shadow: none;
 
 // Import only what you need from Bulma
 @import '../../node_modules/bulma/sass/utilities/_all.sass';
@@ -32,14 +20,22 @@ $family-sans-serif: 'Nunito', sans-serif;
 
 @import '../../node_modules/bulma/sass/elements/button.sass';
 @import '../../node_modules/bulma/sass/elements/content.sass';
-// @import '../../node_modules/bulma/sass/elements/container.sass';
-// @import '../../node_modules/bulma/sass/elements/form.sass';
 @import '../../node_modules/bulma/sass/elements/title.sass';
 @import '../../node_modules/bulma/sass/elements/content.sass';
 @import '../../node_modules/bulma/sass/elements/tag.sass';
 
-// @import '../../node_modules/bulma/sass/components/navbar.sass';
 @import '../../node_modules/bulma/sass/components/card.sass';
-// @import '../../node_modules/bulma/sass/layout/hero.sass';
-// @import '../../node_modules/bulma/sass/layout/section.sass';
 @import '../../node_modules/bulma/sass/layout/footer.sass';
+
+@import '../../node_modules/bulma/sass/form/shared.sass';
+@import '../../node_modules/bulma/sass/form/select.sass';
+
+.select:not(.is-multiple):not(.is-loading)::after
+    margin-top: -0.72em;
+
+.in-text .button, .select select
+    padding-left: 0.8em
+    padding-right: 0.1em
+    padding-top: 0.1em
+    padding-bottom: 0.1em
+    height: 1.8em

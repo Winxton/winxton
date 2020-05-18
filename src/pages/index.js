@@ -13,7 +13,7 @@ function renderItem({ node: post }) {
           <h2>{post.frontmatter.title}</h2>
         </Link>
         <span style={{paddingRight: '.5rem'}} className="subtitle is-6">{post.frontmatter.date}</span>
-        {post.frontmatter.tags.map((tag) => <span key={tag} className="tag is-light">{tag}</span>)}
+        {post.frontmatter.tags.map((tag) => <span key={tag} style={{marginLeft: '0.5em'}} className="tag is-light">{tag}</span>)}
         <p>{post.excerpt}</p>
       </li>
     </div>
