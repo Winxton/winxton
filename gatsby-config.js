@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: 'Winxton',
-    description: "Winston Wu (winxton)'s blog on indie-hacking, programming, design, psychology, and random shower thoughts.",
+    description: "Winston Wu (winxton)'s blog on indie-hacking, programming, design, psychology, but mostly non profound shower thoughts.",
     siteUrl: `https://www.winxton.com`,
     author: '@winxton',
   },
@@ -63,6 +63,9 @@ module.exports = {
         display: 'minimal-ui',
       },
     },
+    {
+      resolve: `gatsby-plugin-typescript`,
+    },
     // RSS Feed
     {
       resolve: `gatsby-plugin-feed-mdx`,
@@ -112,7 +115,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Winxton (Levi Nakamura)",
+            title: "Winxton",
           }
         ]
       }
