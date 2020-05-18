@@ -30,9 +30,10 @@ class DynamicText extends React.Component<IProps, IState> {
       max: Infinity,
       step: 1,
       pixelDistance: null,
-      className: 'input',
+      className: 'has-text-info',
       format: function(x) { return x; },
       onInput: function() { },
+      onChange: function() { },
       disabled: false
   }
 
@@ -141,17 +142,17 @@ class DynamicText extends React.Component<IProps, IState> {
 
   render() {
     return (
-      <input
+      <span
+        style={{ borderBottom: '2px dotted' }}
         className={this.props.className}
-        disabled={this.props.disabled}
-        type='text'
         onChange={this.onChange}
         onMouseDown={this.onMouseDown}
         onKeyDown={this.onKeyDown}
         onMouseUp={this.onMouseUp}
         onDoubleClick={this.onDoubleClick}
-        onBlur={this.onBlur}
-        value={this.props.format(this.state.value)} />
+        onBlur={this.onBlur}>
+          {this.props.format(this.state.value)}
+        </span>
     );
   }
 }
