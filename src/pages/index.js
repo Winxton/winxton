@@ -27,7 +27,7 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Winxton" titleTemplate="Winxton"/>
+      <SEO title="Winxton" description="Winston's blog." titleTemplate="Winxton"/>
       <ul>
         <h1 className="title">Posts</h1>
         {edgesChunked.map((nodes, idx) => {

@@ -91,7 +91,7 @@ const About = () => {
                     <div className="card">
                         <header className="card-header">
                             <div className="card-header-title">
-                                Timecouncil [WIP]
+                                <a href="https://www.timecouncil.com">timecouncil</a>
                             </div>
                         </header>
 
@@ -99,7 +99,7 @@ const About = () => {
                             <div className="content">
                             <p>Mint is a popular app that tracks how you spend your money by connecting to your credit cards and bank accounts,
                             and summarizes spending over time.</p>
-                            <p>I'm working on an app called Timecouncil, used to view transactions, goals, and budget our time.</p>
+                            <p>Similarly, timecouncil lets you view transactions, goals, and budget our time.</p>
                             </div>
                         </div>
                     </div>
