@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import civilpixelsLogo from '../images/civilpixels.png'
 import hyperspeedLogo from '../images/hyperspeed.png'
 import pianoshelfLogo from '../images/pianoshelf.png'
+import timecouncilLogo from '../images/timecouncil.png'
 import SEO from '../components/seo'
 
 
@@ -91,7 +92,8 @@ const About = () => {
                     <div className="card">
                         <header className="card-header">
                             <div className="card-header-title">
-                                <a href="https://www.timecouncil.com">timecouncil</a>
+                                <img src={timecouncilLogo} width="30em"/>
+                                <a style={{paddingLeft: '0.5rem'}} href="https://www.timecouncil.com">Timecouncil</a>
                             </div>
                         </header>
 
